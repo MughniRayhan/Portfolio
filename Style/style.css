@@ -9,6 +9,13 @@
   color: #fd6e0a;
 }
 
+header {
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -44,4 +51,25 @@ nav ul li a {
   border: none;
   border-radius: 5px;
   font-size: 20px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+}
+.banner-content {
+  /* max-width: 580px; */
+}
+.banner-greetings {
+  font-size: 45px;
+  font-weight: 600;
+}
+.banner-title {
+  font-size: 85px;
+  font-weight: bold;
+}
+
+.banner-picture {
+  width: 580px;
 }
