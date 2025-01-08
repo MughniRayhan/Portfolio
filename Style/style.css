@@ -72,7 +72,8 @@ nav ul li a {
 }
 
 .banner-picture {
-  width: 580px;
+  width: 500px;
+  margin-right: 200px;
 }
 main {
   max-width: 1140px;
@@ -88,6 +89,7 @@ main {
   font-size: 35px;
   font-weight: bold;
   color: #181818;
+  text-align: center;
 }
 
 .section-description {
@@ -116,4 +118,42 @@ main {
   padding: 30px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
+  margin-top: 60px;
+}
+.skill-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.skill-description {
+  color: rgba(117, 117, 117, 1);
+  font-size: 16px;
+}
+.resume {
+  margin-top: 130px;
+}
+.resume-container {
+  display: flex;
+  gap: 40px;
+}
+.experience-description {
+  color: #757575;
+}
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
+}
+.col-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(71, 71, 71, 1);
+}
+.experience-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(71, 71, 71, 1);
+}
+.experience-subtitle {
+  font-size: 20px;
+
+  color: rgba(117, 117, 117, 1);
 }
