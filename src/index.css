@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+nav a.active {
+  color: #8245ec;
+}

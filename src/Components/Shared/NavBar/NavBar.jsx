@@ -1,8 +1,77 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { NavLink } from 'react-router'
 
 function NavBar() {
+ const [isScrolled,setIsScrolled] = useState(false);
+
+ useEffect(()=>{
+  const handleScrolled = ()=>{
+    setIsScrolled(window.scrollY > 50)
+  };
+  window.addEventListener("scroll",handleScrolled);
+  return ()=> window.removeEventListener("scroll",handleScrolled)
+ },[])
+
+const navLnks = <>
+<li><NavLink className="text-white" to='/'>Home</NavLink></li>
+<li><NavLink className="text-white" to='/about'>About</NavLink></li>
+<li><NavLink className="text-white" to='/skills'>Skills</NavLink></li>
+<li><NavLink className="text-white" to='/projects'>Projects</NavLink></li>
+<li><NavLink className="text-white" to='/contact'>Contact</NavLink></li>
+</>
+
   return (
-    <div>NavBar</div>
+    <nav className={`navbar fixed top-0 z-50 transition duration-300   text-white sm:px-20
+    ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"}
+    `}>
+  <div className="navbar-start">
+
+    {/* logo */}
+    <h3 className='sm:text-lg font-bold'>
+      <span className='text-[#8245ec]'>&lt;</span>Mughni
+      <span className='text-[#8245ec]'> / </span>Rayhan
+      <span className='text-[#8245ec]'>&gt;</span>
+    </h3>
+
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal px-1">
+      {navLnks}
+    </ul>
+  </div>
+  <div className="navbar-end">
+    {/* social */}
+    <div className='lg:flex gap-3 hidden text-lg'>
+      <a href="https://github.com/MughniRayhan" target="_blank" rel="noopener noreferrer" className="hover:text-[#8245ec] transition">
+              <FaGithub />
+       </a>
+       <a href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/" target="_blank" rel="noopener noreferrer" className="hover:text-[#8245ec] transition">
+              <FaLinkedin />
+      </a>
+    </div>
+  
+
+    <div className="dropdown  dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabIndex={0}
+        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3  p-2 shadow ">
+        {navLnks}
+        <div className='lg:hidden  flex justify-center gap-2 mt-4'>
+      <a href="https://github.com/MughniRayhan" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition">
+              <FaGithub />
+       </a>
+       <a href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition">
+              <FaLinkedin />
+      </a>
+    </div>
+      </ul>
+    </div>
+  </div>
+</nav>
   )
 }
 
