@@ -35,7 +35,7 @@ function Banner() {
             With a strong foundation in React.js, and modern UI frameworks, I focus on creating responsive and performance-optimized solutions.
             </p>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" 
+            <a href="https://docs.google.com/document/d/1Fhon7H5aTFScKgDDMVSHt8c5ojrDepFiYMcZ4Oi8hRU/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" 
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold  transition duration-300 transform scale-105"
             style={{
                 background: 'linear-gradient(90deg, #8245ec, #a855f7)',
