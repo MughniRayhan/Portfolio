@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     name: "Sports Club Management System",
-    image: {SCMS},
+    image: SCMS,
     stack: ["React.js", "Tailwind CSS","Node.js","Mongodb"],
     description: "A responsive React.js application for managing sports club activities including court bookings, role-based dashboards, payment processing with Stripe, and user authentication.",
     liveLink: "https://resplendent-longma-03a333.netlify.app/",
@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "GreenNest",
-    image: {GreenNest},
+    image: GreenNest,
     stack: ["MERN Stack", "Tailwind CSS", "JWT Auth"],
     description: "A full-featured web application to track and manage indoor plants. Users can view plant details, monitor watering schedules, and sort plants by care level or next watering date.",
     liveLink: "https://bucolic-duckanoo-1a2059.netlify.app/",
@@ -24,7 +24,7 @@ const projects = [
   {
     id: 3,
     name: "Food Expiry Tracker System",
-    image: {Food},
+    image: Food,
     stack: ["React.js", "Node.js", "Stripe Payment"],
     description: "A full-stack web app to track food items, monitor expiry dates, get usage suggestions, and minimize waste. Built with React, Tailwind CSS, Express.js, and MongoDB.",
     liveLink: "https://lighthearted-pony-e9a162.netlify.app/",

@@ -6,7 +6,7 @@ import Food from '../../assets/foodExpiry.png'
 const projectDetails = {
   1: {
     name: "Sports Club Management System",
-    image: {SCMS},
+    image: SCMS,
     stack: ["React.js", "Tailwind CSS","Node.js","Mongodb"],
     description: "A responsive React.js application for managing sports club activities including court bookings, role-based dashboards, payment processing with Stripe, and user authentication.",
     liveLink: "https://resplendent-longma-03a333.netlify.app/",
@@ -16,7 +16,7 @@ const projectDetails = {
   },
   2: {
     name: "GreenNest",
-    image: {GreenNest},
+    image: GreenNest,
     stack: ["MERN Stack", "Tailwind CSS", "JWT Auth"],
     description: "A full-featured web application to track and manage indoor plants. Users can view plant details, monitor watering schedules, and sort plants by care level or next watering date.",
     liveLink: "https://bucolic-duckanoo-1a2059.netlify.app/",
@@ -27,7 +27,7 @@ const projectDetails = {
   3: {
    id: 3,
     name: "Food Expiry Tracker System",
-    image: {Food},
+    image: Food,
     stack: ["React.js", "Node.js", "Stripe Payment"],
     description: "A full-stack web app to track food items, monitor expiry dates, get usage suggestions, and minimize waste. Built with React, Tailwind CSS, Express.js, and MongoDB.",
     liveLink: "https://lighthearted-pony-e9a162.netlify.app/",
@@ -46,7 +46,7 @@ export default function ProjectDetails() {
   }
 
   return (
-    <section className="py-16 px-6 max-w-5xl mx-auto">
+    <section className="py-16 px-6 max-w-5xl mx-auto my-10">
       <img src={project.image} alt={project.name} className="w-full rounded-xl mb-8" />
       <h2 className="text-4xl font-bold mb-4 text-white">{project.name}</h2>
       <p className="text-lg text-gray-400 mb-4">{project.description}</p>
@@ -63,13 +63,13 @@ export default function ProjectDetails() {
         <a href={project.githubLink} target="_blank" rel="noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900">GitHub Repo</a>
       </div>
 
-      <h3 className="text-xl font-semibold mt-6">Challenges Faced:</h3>
-      <p className="text-gray-600">{project.challenges}</p>
+      <h3 className="text-xl font-semibold mt-6 text-white">Challenges Faced:</h3>
+      <p className="text-gray-500">{project.challenges}</p>
 
-      <h3 className="text-xl font-semibold mt-6">Future Plans:</h3>
-      <p className="text-gray-600">{project.futurePlans}</p>
+      <h3 className="text-xl font-semibold mt-6 text-white">Future Plans:</h3>
+      <p className="text-gray-500">{project.futurePlans}</p>
 
-      <Link to="/projects" className="inline-block mt-8 text-blue-600 hover:underline">← Back to Projects</Link>
+      <Link to="/projects" className="inline-block mt-8 text-purple-600 hover:underline">← Back to Projects</Link>
     </section>
   );
 }
