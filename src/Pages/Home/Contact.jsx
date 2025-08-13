@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -35,23 +35,11 @@ function Contact() {
               <FaPhoneAlt className="text-3xl text-purple-400" />
               <div>
                 <p className="font-semibold">Phone</p>
-                <p className="text-gray-400">+880 1234-567890</p>
+                <p className="text-gray-400">+880 1746423366</p>
               </div>
             </a>
 
-            {/* WhatsApp */}
-            <a
-              href="https://wa.me/8801234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
-            >
-              <FaWhatsapp className="text-3xl text-green-400" />
-              <div>
-                <p className="font-semibold">WhatsApp</p>
-                <p className="text-gray-400">+880 1234-567890</p>
-              </div>
-            </a>
+            
           </div>
 
           {/* Right side - Contact Form */}

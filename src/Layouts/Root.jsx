@@ -5,6 +5,7 @@ import Footer from '../Components/Shared/Footer/Footer'
 import BlurBlob from '../Components/BlurBlob'
 
 function Root() {
+
   return (
     <div className='bg-[#050414] min-h-screen '>
 
