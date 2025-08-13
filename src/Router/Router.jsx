@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       Component: Skills
     },
     {
-      path: '/contactt',
+      path: '/contact',
       Component: Contact
     },
     {

@@ -5,14 +5,16 @@ import Profile from '../../assets/my-profile.jpg'
 function Banner() {
   return (
     <div className='py-24 px-20  '>
-        <div className='flex flex-col-reverse md:flex-row justify-between items-center'>
+        <div className='flex flex-col-reverse md:flex-row justify-between items-center '>
+          
            {/* left side */}
            <div className='md:w-1/2 text-center md:text-left text-white mt-8'>
+
              <h2 className='text-3xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight'>Hi, I am</h2>
              <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight'>Mughni Rayhan</h2>
              {/*  */}
              <h3 className='text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight'>
-                <span className='text-white '>I am a</span>
+                <span className='text-white '>I am a </span>
                 <ReactTypingEffect 
                 text={[
                       
