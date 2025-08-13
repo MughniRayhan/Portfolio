@@ -34,28 +34,28 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-16 " id="projects">
+    <section className="py-16 " id="projects" data-aos="fade-up" data-aos-duration="2000">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12 text-white my-10">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+              className="border border-white  rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 "
             >
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover "
               />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+              <div className="p-6   ">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-300">{project.name}</h3>
+                <p className="text-gray-500 mb-5">{project.description}</p>
                 <Link
                   to={`/projects/${project.id}`}
                   className="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300"
                 >
-                  View More / Details
+                  View More 
                 </Link>
               </div>
             </div>

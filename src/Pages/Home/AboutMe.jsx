@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <section className="py-16 px-6 md:px-20 bg-gray-900 text-white">
+    <section className="py-16 px-6 md:px-20 bg-gray-900 text-white" data-aos="fade-up" data-aos-duration="2000">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           About Me
