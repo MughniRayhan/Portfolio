@@ -18,9 +18,9 @@ function Contact() {
             {/* Email */}
             <a
               href="mailto:mughnirayhan@gmail.com"
-              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
+              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
             >
-              <FaEnvelope className="text-3xl text-purple-400" />
+              <FaEnvelope className="text-3xl text-primary" />
               <div>
                 <p className="font-semibold">Email</p>
                 <p className="text-gray-400">mughnirayhan@gmail.com</p>
@@ -30,9 +30,9 @@ function Contact() {
             {/* Phone */}
             <a
               href="tel:+8801234567890"
-              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
+              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
             >
-              <FaPhoneAlt className="text-3xl text-purple-400" />
+              <FaPhoneAlt className="text-3xl text-primary" />
               <div>
                 <p className="font-semibold">Phone</p>
                 <p className="text-gray-400">+880 1746423366</p>
@@ -43,14 +43,14 @@ function Contact() {
           </div>
 
           {/* Right side - Contact Form */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300">
             <form className="space-y-6">
               <div>
                 <label className="block mb-2 font-medium">Your Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
 
@@ -59,7 +59,7 @@ function Contact() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
 
@@ -68,13 +68,17 @@ function Contact() {
                 <textarea
                   placeholder="Write your message..."
                   rows="5"
-                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  className="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-primary"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                className="w-full bg-primary hover:scale-105 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                 style={{
+                background: 'linear-gradient(90deg, #276F7A, #79959c)',
+                boxShadow: '0 0 2px #276F7A, 0 0 2px #276F7A, 0 0 20px #276F7A'
+            }}
               >
                 Send Message
               </button>

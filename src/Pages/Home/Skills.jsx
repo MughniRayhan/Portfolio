@@ -56,10 +56,10 @@ function Skills() {
         {skills.map((skillGroup, idx) => (
           <div
             key={idx}
-            className="bg-gray-900 backdrop-blur-md p-6 border border-white rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:-translate-y-0.5"
+            className="bg-gray-900 backdrop-blur-md p-6 border border-white rounded-2xl shadow-lg hover:shadow-primary transition-all duration-300 transform hover:-translate-y-0.5"
            data-aos="fade-right" data-aos-duration="2000"
           >
-            <h3 className="text-xl text-center font-semibold mb-4 text-purple-400">
+            <h3 className="text-xl text-center font-semibold mb-4 text-primary">
               {skillGroup.category}
             </h3>
              

@@ -1,10 +1,6 @@
 export default function Footer() {
   return (
-    <footer className=" text-gray-300 text-sm py-4" 
-    style={{
-                background: 'linear-gradient(90deg, #8245ec, #a855f7)'
-            }}
-    >
+    <footer className=" text-gray-300 text-sm py-4 bg-primary" >
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
         <p>© {new Date().getFullYear()} Mughni Rayhan. All rights reserved.</p>
         <div className="flex gap-4">

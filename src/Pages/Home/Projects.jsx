@@ -53,8 +53,7 @@ export default function Projects() {
                 <p className="text-gray-500 mb-5">{project.description}</p>
                 <Link
                   to={`/projects/${project.id}`}
-                  className="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300"
-                >
+                  className="w-full bg-primary hover:bg-transparent hover:border hover:border-primary  text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300" >
                   View More 
                 </Link>
               </div>

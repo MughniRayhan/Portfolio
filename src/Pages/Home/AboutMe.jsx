@@ -8,10 +8,10 @@ function AboutMe() {
           About Me
         </h2>
 
-        <div className="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+        <div className="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-primary/50 transition-all duration-300">
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            Hello! I’m <span className="text-purple-400 font-semibold">Mughni Rayhan</span>, a passionate{" "}
-            <span className="text-purple-400 font-semibold">MERN Stack Developer</span> with a strong foundation in 
+            Hello! I’m <span className="text-primary font-semibold">Mughni Rayhan</span>, a passionate{" "}
+            <span className="text-primary font-semibold">MERN Stack Developer</span> with a strong foundation in 
             HTML, CSS, JavaScript, React.js, Redux, Node.js, and MongoDB. My programming journey began 
             in my early university days, when I started experimenting with small web projects and quickly 
             discovered the joy of turning ideas into interactive, functional, and visually appealing applications.
@@ -26,8 +26,8 @@ function AboutMe() {
 
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
             Outside of coding, I enjoy exploring creativity through hobbies like{" "}
-            <span className="text-purple-400">graphic design</span> and{" "}
-            <span className="text-purple-400">content creation</span>. I’m also a big fan of sports — 
+            <span className="text-primary">graphic design</span> and{" "}
+            <span className="text-primary">content creation</span>. I’m also a big fan of sports — 
             especially cricket — which helps me stay active and maintain a balanced lifestyle.
           </p>
 

@@ -15,7 +15,7 @@ AOS.init({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <div >
+     <div className='poppins'>
       <RouterProvider router={router} />
      </div>
   </StrictMode>,

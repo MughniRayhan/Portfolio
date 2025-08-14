@@ -28,10 +28,10 @@ const navLnks = <>
   <div className="navbar-start">
 
     {/* logo */}
-    <h3 className='sm:text-lg font-bold'>
-      <span className='text-[#8245ec]'>&lt;</span>Mughni
-      <span className='text-[#8245ec]'> / </span>Rayhan
-      <span className='text-[#8245ec]'>&gt;</span>
+    <h3 className='sm:text-xl font-bold accent-gradient'>
+      <span>&lt;</span>Mughni
+      <span > / </span>Rayhan
+      <span>&gt;</span>
     </h3>
 
   </div>
@@ -43,10 +43,10 @@ const navLnks = <>
   <div className="navbar-end">
     {/* social */}
     <div className='lg:flex gap-3 hidden text-lg'>
-      <a href="https://github.com/MughniRayhan" target="_blank" rel="noopener noreferrer" className="hover:text-[#8245ec] transition">
+      <a href="https://github.com/MughniRayhan" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
               <FaGithub />
        </a>
-       <a href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/" target="_blank" rel="noopener noreferrer" className="hover:text-[#8245ec] transition">
+       <a href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">
               <FaLinkedin />
       </a>
     </div>
