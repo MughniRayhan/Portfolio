@@ -12,7 +12,7 @@ function Banner() {
            <div className='md:w-1/2 text-center md:text-left text-white mt-8'>
 
              <h2 className='text-3xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight'>Hi, I am</h2>
-             <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight accent-gradient'>Mughni Rayhan</h2>
+             <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-b from-primary/30 via-gray-400 to-gray-200 bg-clip-text text-transparent'>Mughni Rayhan</h2>
              {/*  */}
              <h3 className='text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#276F7A] leading-tight'>
                 <span className='text-white '>I am a </span>
@@ -38,15 +38,15 @@ function Banner() {
             With a strong foundation in React.js, and modern UI frameworks, I focus on creating responsive and performance-optimized solutions.
             </p>
 
+            
+
+           <div className='card-wrapper h-[60px] w-[150px] mt-10'>
             <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold  transition duration-300 transform scale-105"
-            style={{
-                background: 'linear-gradient(90deg, #276F7A, #B8D3D9)',
-                boxShadow: '0 0 2px #276F7A, 0 0 2px #276F7A, 0 0 40px #276F7A'
-            }}
+            className="card-content  text-gray-300 flex justify-center items-center   font-bold "
             >
-                          Dowload CV
-                  </a>
+             Dowload CV
+             </a>
+             </div>
            </div>
 
            {/* right side */}

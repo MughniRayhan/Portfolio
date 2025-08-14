@@ -33,10 +33,19 @@
   will-change: transform;
 }
 
+@keyframes border-spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.animate-border-spin {
+  animation: border-spin 7s infinite linear;
+}
+
 .skills-gradient {
   background: linear-gradient(
       38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
+      b rgba(204, 0, 187, 0.15) 0%,
       rgba(201, 32, 184, 0) 50%
     ),
     linear-gradient(
@@ -59,4 +68,29 @@ nav a.active {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-wrapper {
+  @apply relative bg-gradient-to-b from-slate-700 to-slate-800 rounded-2xl overflow-hidden;
+}
+
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  height: 150%;
+  width: 150%;
+
+  background: conic-gradient(
+    rgba(39, 111, 122, 1) 0%,
+    rgba(184, 211, 217, 0.7) 47%,
+    transparent 80deg
+  );
+
+  animation: border-spin 7s infinite linear;
+}
+
+.card-content {
+  @apply absolute w-[calc(100%-3px)] h-[calc(100%-3px)] top-[2px] left-[2px]  bg-gradient-to-b from-black to-gray-900 rounded-2xl;
 }
