@@ -1,8 +1,11 @@
+import { scale, useScroll } from "motion/react";
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJava, FaGithub, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiRedux, SiMongodb, SiC, SiCplusplus, SiJavascript, SiPython, SiPostman, SiExpress } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 import Tilt from 'react-parallax-tilt'
+import { motion } from "motion/react"
+
 const skills = [
   {
     category: "Frontend",
@@ -45,21 +48,34 @@ const skills = [
 ];
 
 function Skills() {
+    const scrollYProgress = useScroll().scrollYProgress
   return (
-    <section className="py-16 px-6 md:px-20 skills-gradient text-white" data-aos="fade-up" data-aos-duration="2000">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
+    <section className="py-16 px-6 md:px-20 skills-gradient text-white " data-aos="fade-up" data-aos-duration="2000" >
+      <motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-3 relative  w-[20%] mx-auto " >
         Skills
-      </h2>
-      <p className="text-gray-400 lg:w-180  mx-auto font-semibold text-center mb-12">These are the technologies, tools, and programming languages I have mastered and regularly use to build efficient, scalable, and modern web applications.</p>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" >
+      <motion.span style={{
+        width: "100%",
+          height: "2px",
+          transformOrigin: "center",
+        scaleX:scrollYProgress
+      }}
+       
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="hidden lg:block absolute left-0 top-10 bg-linear-to-r from-primary to-secondary "
+      >
+      </motion.span>
+      </motion.h2>
+      <p className="accent-gradient lg:w-180  mx-auto  text-sm text-center mb-12 mt-4">These are the technologies, tools, and programming languages I have mastered and regularly use to build efficient, scalable, and modern web applications.</p>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8" >
         {skills.map((skillGroup, idx) => (
           <div
             key={idx}
-            className="bg-gray-900 backdrop-blur-md p-6 border border-white rounded-2xl shadow-lg hover:shadow-primary transition-all duration-300 transform hover:-translate-y-0.5"
+            className="bg-gray-900  backdrop-blur-md px-6 py-10 border border-white rounded-2xl shadow-lg hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/50 hover:to-transparent group transform hover:-translate-y-0.5 transition-all duration-500"
            data-aos="fade-right" data-aos-duration="2000"
           >
-            <h3 className="text-xl text-center font-semibold mb-4 text-primary">
+            <h3 className="text-xl text-center font-semibold mb-4 text-primary group-hover:text-gray-900">
               {skillGroup.category}
             </h3>
              
@@ -73,7 +89,7 @@ function Skills() {
             gyroscope={true}
             >
               {/* skills */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4 mt-8">
               {skillGroup.icons.map((item, index) => (
                 <div
                   key={index}
@@ -82,7 +98,7 @@ function Skills() {
                   <div className="text-4xl transition-transform duration-300 group-hover:scale-125">
                     {item.icon}
                   </div>
-                  <p className="text-sm mt-1 text-gray-400">{item.name}</p>
+                  <p className="text-sm mt-1 text-gray-400 group-hover:text-white">{item.name}</p>
                 </div>
               ))}
             </div>

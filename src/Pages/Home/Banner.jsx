@@ -43,7 +43,7 @@ function Banner() {
 
            <div className='card-wrapper h-[60px] w-[150px] mt-10'>
             <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
-            className="card-content  text-gray-300 flex justify-center items-center   font-bold "
+            className="card-content  text-gray-300 flex justify-center items-center   font-bold  "
             >
              Dowload CV
              </a>

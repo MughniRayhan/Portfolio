@@ -5,7 +5,7 @@
   name: "light";
   default: true;
   --color-primary: #276f7a;
-  --color-secondary: #79959c;
+  --color-secondary: #b7bdbc;
   --accent-color: #79959c;
 }
 .poppins {
@@ -29,7 +29,7 @@
   }
 }
 .animate-blob {
-  animation: blob 8s infinite ease-in-out;
+  animation: blob 5s infinite ease-in-out;
   will-change: transform;
 }
 
@@ -92,5 +92,5 @@ nav a.active {
 }
 
 .card-content {
-  @apply absolute w-[calc(100%-3px)] h-[calc(100%-3px)] top-[2px] left-[2px]  bg-gradient-to-b from-black to-gray-900 rounded-2xl;
+  @apply absolute w-[calc(100%-3px)] h-[calc(100%-3px)] top-[2px] left-[2px]  bg-gradient-to-b from-black to-gray-900 rounded-2xl hover:text-primary duration-200;
 }

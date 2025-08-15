@@ -11,9 +11,9 @@ const state = useNavigation();
     <div className='bg-[#050414] min-h-screen '>
 
     <BlurBlob
-          position={{ top: '30%', left: '15%' }}
-          size={{ width: '30%', height: '20%' }}
-          colors={['#CBCBD1', '#1D5861']}
+          position={{ top: '25%', left: '18%' }}
+          size={{ width: '20%', height: '20%' }}
+          colors={['#276f7a', '#276f7a']}
           
         >
   

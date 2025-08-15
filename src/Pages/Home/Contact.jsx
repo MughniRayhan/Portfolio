@@ -17,25 +17,25 @@ function Contact() {
           <div className="space-y-6">
             {/* Email */}
             <a
-              href="mailto:mughnirayhan@gmail.com"
-              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
+              href="mailto:mughnirayhan22@gmail.com"
+              className="w-full flex items-center  gap-4 bg-gray-800 py-5 sm:px-5 px-2 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
             >
-              <FaEnvelope className="text-3xl text-primary" />
-              <div>
-                <p className="font-semibold">Email</p>
-                <p className="text-gray-400">mughnirayhan@gmail.com</p>
+              <FaEnvelope className="sm:text-3xl text-primary" />
+              <div className="w-full ">
+                <p className="font-semibold text-sm sm:text-base">Email</p>
+                <p className="text-gray-400 w-[80%] text-sm sm:text-base">mughnirayhan22@gmail.com</p>
               </div>
             </a>
 
             {/* Phone */}
             <a
               href="tel:+8801234567890"
-              className="flex items-center gap-4 bg-gray-800 p-5 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
+              className="flex items-center flex-wrap gap-4 bg-gray-800 py-5 sm:px-5 px-2 rounded-2xl shadow-lg hover:shadow-primary/30 transition-all duration-300"
             >
-              <FaPhoneAlt className="text-3xl text-primary" />
+              <FaPhoneAlt className="sm:text-3xl text-primary" />
               <div>
-                <p className="font-semibold">Phone</p>
-                <p className="text-gray-400">+880 1746423366</p>
+                <p className="font-semibold text-sm sm:text-base">Phone</p>
+                <p className="text-gray-400 text-sm sm:text-base">+880 1746423366</p>
               </div>
             </a>
 
