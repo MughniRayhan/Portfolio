@@ -72,10 +72,10 @@ function Skills() {
         {skills.map((skillGroup, idx) => (
           <div
             key={idx}
-            className="bg-gray-900  backdrop-blur-md px-6 py-10 border border-white rounded-2xl shadow-lg hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/50 hover:to-transparent group transform hover:-translate-y-0.5 transition-all duration-500"
+            className="bg-gray-900  backdrop-blur-md px-6 py-10 border border-secondary  rounded-2xl shadow-lg hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/50 hover:to-transparent group transform hover:-translate-y-0.5 transition-all duration-500"
            data-aos="fade-right" data-aos-duration="2000"
           >
-            <h3 className="text-xl text-center font-semibold mb-4 text-primary group-hover:text-gray-900">
+            <h3 className="sm:text-xl  text-center font-semibold mb-4 text-primary group-hover:text-gray-900">
               {skillGroup.category}
             </h3>
              
@@ -89,13 +89,13 @@ function Skills() {
             gyroscope={true}
             >
               {/* skills */}
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
               {skillGroup.icons.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center justify-center group " 
+                  className="flex flex-col items-center justify-center  group/inner" 
                 >
-                  <div className="text-4xl transition-transform duration-300 group-hover:scale-125">
+                  <div className="sm:text-5xl text-4xl transition-transform duration-300 group-hover/inner:scale-125">
                     {item.icon}
                   </div>
                   <p className="text-sm mt-1 text-gray-400 group-hover:text-white">{item.name}</p>
