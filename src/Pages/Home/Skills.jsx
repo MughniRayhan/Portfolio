@@ -51,7 +51,7 @@ function Skills() {
     const scrollYProgress = useScroll().scrollYProgress
   return (
     <section className="py-16 px-6 md:px-20 skills-gradient text-white " data-aos="fade-up" data-aos-duration="2000" >
-      <motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-3 relative  w-[20%] mx-auto " >
+      <motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-3 relative  w-[20%] mx-auto bg-gradient-to-t from-primary/30 via-gray-400 to-gray-200 bg-clip-text text-transparent" >
         Skills
       
       <motion.span style={{
@@ -73,7 +73,7 @@ function Skills() {
           <div
             key={idx}
             className="bg-gray-900  backdrop-blur-md px-6 py-10 border border-secondary  rounded-2xl shadow-lg hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/50 hover:to-transparent group transform hover:-translate-y-0.5 transition-all duration-500"
-           data-aos="fade-right" data-aos-duration="2000"
+           data-aos="zoom-in" data-aos-duration="2000"
           >
             <h3 className="sm:text-xl  text-center font-semibold mb-4 text-primary group-hover:text-gray-900">
               {skillGroup.category}
