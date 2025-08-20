@@ -1,12 +1,26 @@
 import React from "react";
+import { motion, useScroll } from "motion/react"
 
 function AboutMe() {
+   const scrollYProgress = useScroll().scrollYProgress
   return (
-    <section className="py-16 px-6 md:px-20 bg-gray-900 text-white" data-aos="fade-up" data-aos-duration="2000">
+    <section className="py-16 px-6 md:px-20  text-white" data-aos="fade-up" data-aos-duration="2000">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          About Me
-        </h2>
+        <motion.h2 className="text-3xl md:text-4xl font-bold text-center mb-3 relative  w-[20%] mx-auto bg-gradient-to-t from-primary/30 via-gray-400 to-gray-200 bg-clip-text text-transparent" >
+        About Me
+      
+      <motion.span style={{
+        width: "100%",
+          height: "2px",
+          transformOrigin: "center",
+        scaleX:scrollYProgress
+      }}
+       
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="hidden lg:block absolute left-0 top-10 bg-linear-to-r from-primary to-secondary "
+      >
+      </motion.span>
+      </motion.h2>
 
         <div className="bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-primary/50 transition-all duration-300">
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
