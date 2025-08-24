@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import SCMS from '../../assets/scms.png'
 import GreenNest from '../../assets/GreenNest.png'
 import Food from '../../assets/foodExpiry.png'
+import { div } from "motion/react-client";
 const projects = [
   {
     id: 1,
@@ -33,6 +34,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  
   return (
     <section className="py-16 " id="projects" data-aos="fade-up" data-aos-duration="2000">
       <div className="max-w-7xl mx-auto px-6">
