@@ -1,45 +1,12 @@
-import { useParams, Link } from "react-router";
-import SCMS from '../../assets/scms.png'
-import GreenNest from '../../assets/GreenNest.png'
-import Food from '../../assets/foodExpiry.png'
+import { useParams, Link, useLoaderData } from "react-router";
 
-const projectDetails = {
-  1: {
-    name: "Sports Club Management System",
-    image: SCMS,
-    stack: ["React.js", "Tailwind CSS","Node.js","Mongodb"],
-    description: "A responsive React.js application for managing sports club activities including court bookings, role-based dashboards, payment processing with Stripe, and user authentication.",
-    liveLink: "https://resplendent-longma-03a333.netlify.app/",
-    githubLink: "https://github.com/MughniRayhan/scms-client-side",
-    challenges: "Handling state for favorites and cart across multiple components efficiently.",
-    futurePlans: "Integrate backend with payment gateway and add user authentication.",
-  },
-  2: {
-    name: "GreenNest",
-    image: GreenNest,
-    stack: ["MERN Stack", "Tailwind CSS", "JWT Auth"],
-    description: "A full-featured web application to track and manage indoor plants. Users can view plant details, monitor watering schedules, and sort plants by care level or next watering date.",
-    liveLink: "https://bucolic-duckanoo-1a2059.netlify.app/",
-    githubLink: "https://github.com/MughniRayhan/plant-care-tracker-client-side",
-    challenges: "Implementing secure role-based permissions.",
-    futurePlans: "Add event ticket booking and payment system.",
-  },
-  3: {
-   id: 3,
-    name: "Food Expiry Tracker System",
-    image: Food,
-    stack: ["React.js", "Node.js", "Stripe Payment"],
-    description: "A full-stack web app to track food items, monitor expiry dates, get usage suggestions, and minimize waste. Built with React, Tailwind CSS, Express.js, and MongoDB.",
-    liveLink: "https://lighthearted-pony-e9a162.netlify.app/",
-    githubLink: "https://github.com/MughniRayhan/food-expiry-client-side",
-    challenges: "Integrating Stripe payment with parcel status updates.",
-    futurePlans: "Implement parcel pickup scheduling.",
-  },
-};
+
 
 export default function ProjectDetails() {
+  const projectDetails = useLoaderData()
   const { id } = useParams();
-  const project = projectDetails[id];
+  const project = projectDetails[id-1];
+  console.log("id: ", id, " project: ", project)
 
   if (!project) {
     return <h2 className="text-center mt-20 text-white">Project not found</h2>;

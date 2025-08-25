@@ -32,11 +32,13 @@ export const router = createBrowserRouter([
     },
     {
       path: '/projects',
-      Component: AllProjects
+      Component: AllProjects,
+      loader: () => fetch('/projects.json')
     },
     {
       path: '/projects/:id',
-      Component: ProjectDetails
+      Component: ProjectDetails,
+      loader: () => fetch('/projects.json')
     },
     ]
   },

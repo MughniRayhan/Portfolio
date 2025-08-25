@@ -1,0 +1,130 @@
+[
+    {
+    "id": 1,
+    "name": "Sports Club Management System",
+    "image": "/images/scms.png",
+    "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb"],
+    "description": "A responsive React.js application for managing sports club activities including court bookings, role-based dashboards, payment processing with Stripe, and user authentication.",
+    "features": [
+    "Role-based dashboards for Admin, Riders, and Customers",
+    "Live parcel tracking with delivery status updates",
+    "Integrated Stripe payment for secure transactions"
+  ],
+    "liveLink": "https://resplendent-longma-03a333.netlify.app/",
+    "githubLink": "https://github.com/MughniRayhan/scms-client-side"
+  },
+  {
+    "id": 2,
+    "name": "GreenNest",
+    "image": "/images/GreenNest.png",
+    "stack": ["MERN Stack", "Tailwind CSS", "JWT Auth"],
+    "description": "A full-featured web application to track and manage indoor plants. Users can view plant details, monitor watering schedules, and sort plants by care level or next watering date.",
+    "features": [
+    "Role-based dashboards for Admin, Riders, and Customers",
+    "Live parcel tracking with delivery status updates",
+    "Integrated Stripe payment for secure transactions"
+  ],
+    "liveLink": "https://bucolic-duckanoo-1a2059.netlify.app/",
+    "githubLink": "https://github.com/MughniRayhan/plant-care-tracker-client-side"
+  },
+  {
+    "id": 3,
+    "name": "Food Expiry Tracker System",
+    "image": "/images/foodExpiry.png",
+    "stack": ["React.js", "Node.js", "Stripe Payment"],
+    "description": "A full-stack web app to track food items, monitor expiry dates, get usage suggestions, and minimize waste. Built with React, Tailwind CSS, Express.js, and MongoDB.",
+    "features": [
+    "Role-based dashboards for Admin, Riders, and Customers",
+    "Live parcel tracking with delivery status updates",
+    "Integrated Stripe payment for secure transactions"
+  ],
+    "liveLink": "https://lighthearted-pony-e9a162.netlify.app/",
+    "githubLink": "https://github.com/MughniRayhan/food-expiry-client-side"
+  },
+  {
+  "id": 4,
+  "name": "SwiftParcel",
+  "image": "/images/swiftParcel.png",
+  "stack": ["MERN", "Stripe Payment", "Firebase Auth"],
+  "description": "A parcel management and delivery tracking platform where users can schedule, pay, and track their deliveries in real time. Features include role-based dashboards for admins, riders, and users.",
+  "features": [
+    "Role-based dashboards for Admin, Riders, and Customers",
+    "Live parcel tracking with delivery status updates",
+    "Integrated Stripe payment for secure transactions"
+  ],
+  "liveLink": "https://voluble-concha-7b7a93.netlify.app/",
+  "githubLink": "https://github.com/MughniRayhan/swift-parcel-client"
+},
+{
+  "id": 5,
+  "name": "MyBank",
+  "image": "/images/myBank.png",
+  "stack": ["React.js","Tailwind CSS","Firebase Auth"],
+  "description": "A secure online banking system for handling deposits and withdrawals history.",
+  "features": [
+    "Make payments directly using their account balance.",
+    "Track paid bills .",
+    "Register, login, and manage their profile securely."
+  ],
+  "liveLink": "https://bill-management-b22fb.web.app/",
+  "githubLink": "https://github.com/MughniRayhan/MyBank"
+},
+{
+  "id": 6,
+  "name": "GadgetGalaxy ",
+  "image": "/images/gadgetGalaxy.png",
+  "stack": ["React.js", "Tailwind CSS" ],
+  "description": "An e-commerce website for electronics featuring product browsing, category filters, shopping cart, and wishlist. Users can browse products, add/remove items from the cart, and save their favorite products for later.",
+  "features": [
+    "Add to Cart – Easily add products to the shopping cart.",
+    "Secure Authentication – Login powered by Auth0.",
+    "Save Favorite – Save products for later viewing."
+  ],
+  "liveLink": "https://zesty-cat-608773.netlify.app/",
+  "githubLink": "https://github.com/MughniRayhan/eCommerce-website"
+},
+{
+  "id": 7,
+  "name": "FurniSpace",
+  "image": "/images/furniSpace.png",
+  "stack": ["Next.js", "Tailwind CSS", "MongoDB", "NextAuth.js"],
+  "description": "A modern furniture e-commerce web application built with Next.js 15.It allows users to browse products, view details, and authenticated users can add new products from a protected dashboard.",
+  "features": [
+    "Browse all available products from the database.",
+    "Authentication (NextAuth.js).",
+    "Protected Route for managing products.",
+    "Add products dynamically."
+  ],
+  "liveLink": "https://furni-space-phi.vercel.app/",
+  "githubLink": "https://github.com/MughniRayhan/FurniSpace"
+},
+{
+  "id": 8,
+  "name": "DocTalk",
+  "image": "/images/docTalk.png",
+  "stack": ["React.js", "Tailwind CSS", "ReCharts"],
+  "description": "An appointment booking system where patients can find doctors by specialty, view availability, and book appointments.",
+  "features": [
+    "Securely book appointments with just a few clicks.",
+    "Patients can view their booked appointments.",
+    "Works seamlessly across desktop, tablet, and mobile devices."
+  ],
+  "liveLink": "https://cozy-dasik-d31b44.netlify.app/",
+  "githubLink": "https://github.com/MughniRayhan/DocTalk"
+},
+{
+  "id": 9,
+  "name": "CozyHaven",
+  "image": "/images/cozyHaven.png",
+  "stack": ["React.js", "Tailwind CSS"],
+  "description": "CozyHaven is a modern e-commerce frontend website where users can browse products, view details, and filter items by category with a clean UI and smooth interactions.",
+  "features": [
+    "Explore a variety of products with images and details. ",
+    "Click on any item to see detailed information.",
+    "Filter products by categories."
+  ],
+  "liveLink": "https://fancy-pavlova-45c3bb.netlify.app/",
+  "githubLink": "https://github.com/MughniRayhan/CozyHaven"
+}
+
+]

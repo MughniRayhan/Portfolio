@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import { motion } from "framer-motion"
 
 function NavBar() {
@@ -27,11 +27,11 @@ const navLinks = [
   <div className="navbar-start">
 
     {/* logo */}
-    <h3 className='sm:text-xl font-bold accent-gradient'>
+    <Link to="/" className='sm:text-xl font-bold accent-gradient outline-0'>
       <span>&lt;</span>Mughni
       <span > / </span>Rayhan
       <span>&gt;</span>
-    </h3>
+    </Link>
 
   </div>
   <div className="navbar-center hidden lg:flex">
