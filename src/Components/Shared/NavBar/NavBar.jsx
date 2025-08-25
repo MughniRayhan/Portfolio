@@ -13,37 +13,6 @@ function NavBar() {
   return ()=> window.removeEventListener("scroll",handleScrolled)
  },[])
 
-// const navLnks = <>
-// <motion.li
-//   className="relative"
-//   whileHover="hover"
-//   initial="initial"
-// >
-//   <NavLink className="text-white" to="/">
-//     Home
-//   </NavLink>
-
-//   {/* Animated underline */}
-// <motion.span
-//   className="absolute left-0 bottom-0 bg-white"
-//   style={{
-//     width: "100%",
-//     height: "1px",
-//     transformOrigin: "center",
-//     scaleY: 0.2 // compress height
-//   }}
-//   variants={{
-//     initial: { scaleX: 0 },
-//     hover: { scaleX: 1 },
-//   }}
-//   transition={{ duration: 0.5, ease: "easeInOut" }}
-// />
-// </motion.li>
-// <li><NavLink className="text-white" to='/about'>About</NavLink></li>
-// <li><NavLink className="text-white" to='/skills'>Skills</NavLink></li>
-// <li><NavLink className="text-white" to='/projects'>Projects</NavLink></li>
-// <li><NavLink className="text-white" to='/contact'>Contact</NavLink></li>
-// </>
 
 const navLinks = [
     { name: "Home", to: "/" },
@@ -54,9 +23,7 @@ const navLinks = [
   ];
 
   return (
-    <nav className={`navbar fixed top-0 z-50 transition duration-300   text-white sm:px-20
-    ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"}
-    `}>
+    <nav className="navbar fixed top-0 z-50 transition duration-300   text-white sm:px-20 bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md">
   <div className="navbar-start">
 
     {/* logo */}
@@ -77,7 +44,7 @@ const navLinks = [
       key={index}
     >
       <NavLink className="text-white" to={link.to}>
-        {link.name} {/* ✅ Only render string, not whole object */}
+        {link.name} 
       </NavLink>
 
       {/* Underline animation */}
