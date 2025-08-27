@@ -48,7 +48,7 @@ export default function ProjectDetails() {
       {/* Tech Stack */}
       <div
         className="bg-gray-900 p-6 rounded-xl shadow-md mb-8"
-        data-aos="zoom-in" data-aos-duration="2000"
+        data-aos="zoom-out" data-aos-duration="2000"
       >
         <h3 className="text-xl font-semibold text-gray-200 mb-3">
           🛠️ Technology Stack
@@ -72,14 +72,14 @@ export default function ProjectDetails() {
       {project.features && (
         <div
           className="bg-gray-900 p-6 rounded-xl shadow-md mb-8"
-          data-aos="fade-up" data-aos-duration="2000"
+          data-aos="zoom-in" data-aos-duration="2000"
         >
           <h3 className="text-xl font-semibold text-gray-200 mb-3">
             ⭐ Key Features
           </h3>
           <ul className="space-y-2">
             {project.features.map((feature, idx) => (
-              <li key={idx} className="flex items-start gap-2" data-aos="fade-up" data-aos-delay={idx * 150} data-aos-duration="2000">
+              <li key={idx} className="flex items-start gap-2" >
                 <FaCheckCircle className="text-green-500 mt-1" />
                 <span>{feature}</span>
               </li>
@@ -115,7 +115,7 @@ export default function ProjectDetails() {
       )}
 
       {/* Links */}
-      <div className="flex gap-4 mt-6" data-aos="zoom-in-up" data-aos-duration="2000">
+      <div className="flex gap-4 mt-6" >
         {project.liveLink && (
           <a
             href={project.liveLink}
@@ -139,7 +139,7 @@ export default function ProjectDetails() {
       </div>
 
       {/* Back Button */}
-      <div className="mt-10" data-aos="fade-up" data-aos-duration="2000">
+      <div className="mt-10" >
         <Link to="/projects" className="inline-block text-white hover:underline">
           ← Back to Projects
         </Link>

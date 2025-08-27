@@ -6,8 +6,8 @@ import { motion } from "framer-motion"
 
 function Banner() {
   return (
-    <div className='py-24  px-20 '>
-        <div className='flex flex-col-reverse md:flex-row justify-between items-center '>
+    <div className='py-24  '>
+        <div className='flex flex-col-reverse md:flex-row justify-between items-center px-20 '>
           
            {/* left side */}
            <div className='md:w-1/2 text-center md:text-left text-white mt-8'>
@@ -57,8 +57,7 @@ function Banner() {
             />
            </div>
         </div>
-<motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='hidden lg:block' animate={{x:[0,20,0],y:[0,20,0]}}
-        transition={{duration:4, repeat:Infinity}} >
+<motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='hidden lg:block'  >
   <defs>
     {/* Gradient definition */}
     <linearGradient id="waveGradient" x1="20%" y1="0%" x2="100%" y2="100%">
