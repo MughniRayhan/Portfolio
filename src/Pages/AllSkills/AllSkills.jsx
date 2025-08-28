@@ -4,7 +4,6 @@ import { SiTailwindcss, SiRedux, SiMongodb, SiC, SiCplusplus, SiJavascript, SiPy
 import { VscCode } from "react-icons/vsc";
 import Tilt from 'react-parallax-tilt';
 import { motion, useScroll } from "motion/react";
-import { Link } from "react-router";
 
 // All skills in a single array with category property
 const allSkills = [
@@ -33,14 +32,14 @@ const allSkills = [
 
 const categories = ["All", "Frontend", "Backend", "Programming Languages", "Tools"];
 
-export default function Skills() {
+export default function AllSkills() {
   const scrollYProgress = useScroll().scrollYProgress
   const [filter, setFilter] = useState("All");
 
   const filteredSkills = filter === "All" ? allSkills : allSkills.filter(skill => skill.category === filter);
 
   return (
-    <section className="py-20 px-6 md:px-20  skills-gradient text-white" data-aos="fade-up" data-aos-duration="2000">
+    <section className="py-20 px-6 md:px-20 skills-gradient text-white" data-aos="fade-up" data-aos-duration="2000">
          <motion.h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-3" >
                 Skills
               
@@ -79,7 +78,7 @@ export default function Skills() {
 
       {/* Skill Cards Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {filteredSkills.slice(0,8).map((skill, idx) => (
+        {filteredSkills.map((skill, idx) => (
           <Tilt
             key={idx}
             tiltMaxAngleX={15}
@@ -93,7 +92,7 @@ export default function Skills() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.05 }}
-              className="bg-gray-900 border border-secondary rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-md hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/20 hover:to-transparent transition-all duration-300"
+              className="bg-gray-900 border border-secondary rounded-xl p-6 flex gap-5 items-center justify-center text-center shadow-md hover:shadow-primary hover:bg-gradient-to-b hover:from-primary/20 hover:to-transparent transition-all duration-300"
             >
               <div className="text-4xl mb-3">{skill.icon}</div>
               <p className="text-sm text-gray-400 group-hover:text-white">{skill.name}</p>
@@ -101,13 +100,6 @@ export default function Skills() {
           </Tilt>
         ))}
       </div>
-      <div className='card-wrapper h-[60px] w-[150px] mt-10 mx-auto'>
-                   <Link to='/skills'
-                   className="card-content  text-gray-300 flex justify-center items-center   font-semibold  "
-                   >
-                    View All
-                    </Link>
-          </div>
     </section>
   );
 }

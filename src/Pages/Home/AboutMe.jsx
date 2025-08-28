@@ -1,5 +1,7 @@
 import React from "react";
 import { motion, useScroll } from "motion/react"
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import resume from '../../assets/resume.pdf'
 import { div } from "motion/react-client";
 
 const about = [
@@ -36,6 +38,64 @@ function AboutMe() {
               </motion.span>
               </motion.h2>
 
+              {/* My Image + Description */}
+          <div className="flex flex-col lg:flex-row items-center justify-center mb-20 gap-10">
+            <motion.img
+              src="/images/my-profile.jpg" 
+              alt="Mughni Rayhan"
+              className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-secondary shadow-lg"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            />
+            
+
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="flex flex-col items-center lg:items-start gap-6"
+>
+  {/* About Text */}
+  <p className="text-gray-400 max-w-2xl text-center lg:text-left text-lg leading-relaxed">
+    Hi, I’m <span className="text-secondary font-semibold">Mughni Rayhan</span>, 
+    a passionate frontend developer who loves bringing ideas to life with clean UI, 
+    smooth interactions, and modern web technologies. I enjoy turning complex 
+    problems into simple, elegant solutions.
+  </p>
+
+  {/* Social Links & CV */}
+  <div className="flex gap-6 items-center">
+        {/* CV Download */}
+    <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
+                className="border text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition"
+                >
+                 Dowload CV
+                 </a>
+    {/* GitHub */}
+    <a
+      href="https://github.com/MughniRayhan"
+      target="_blank"
+      rel="noreferrer"
+      className="text-gray-400 hover:text-secondary transition text-2xl"
+    >
+      <FaGithub />
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/"
+      target="_blank"
+      rel="noreferrer"
+      className="text-gray-400 hover:text-secondary  transition text-2xl"
+    >
+      <FaLinkedin />
+    </a>
+  </div>
+</motion.div>
+
+          </div>
+
               <div className="relative">
                 <div className="absolute lg:left-1/2 left-0 transform -tracking-x-1/2 lg:-translate-x-0 w-1 h-full bg-gradient-to-r from-primary to-secondary "></div>
 
@@ -45,6 +105,9 @@ function AboutMe() {
                   
                 <div className="absolute lg:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-2 border-primary w-5 h-5  rounded-full flex justify-center items-center shadow-2xl shadow-secondary z-10">
                 </div>
+
+                
+
 
                 <div className={`w-full lg:max-w-lg px-8 py-12 lg:py-16  border border-secondary  rounded-bl-4xl  rounded-tr-4xl shadow-md shadow-primary bg-gray-900  backdrop:blur-lg ${item.id %2 ===0 ? "lg:ml-0, lg:text-left" : "lg:mr-0,lg:text-right"} lg:ml-38 lg:mr-37 ml-8 transform transition-transform duration-300 hover:scale-105`}>
                   <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
