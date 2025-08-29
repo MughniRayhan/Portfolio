@@ -7,7 +7,7 @@ import {  toast } from 'react-toastify';
 export default function Contact() {
     const scrollYProgress = useScroll().scrollYProgress
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const { post, loading, error, response } = useAxios("http://localhost:3000/api/contact");
+  const { post, loading, error, response } = useAxios("https://portfolio-server-one-psi.vercel.app/api/contact");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
