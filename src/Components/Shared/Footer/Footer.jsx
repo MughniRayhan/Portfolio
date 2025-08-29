@@ -12,18 +12,21 @@ export default function Footer() {
       <span>&gt;</span>
     </Link>
         </div>
-        <p className="text-gray-500">© {new Date().getFullYear()} Mughni Rayhan. All rights reserved.</p>
+       
         <div className="flex gap-4">
           <a href="https://github.com/MughniRayhan" target="_blank" className="hover:text-white transition">
-              <FaGithub size={24} />
+              <FaGithub size={20} />
             </a>
             <a href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/" target="_blank" className="hover:text-white transition">
-              <FaLinkedin size={24} />
+              <FaLinkedin size={20} />
             </a>
             <a href="mailto:mughnirayhan22@gmail.com" className="hover:text-white transition">
-              <FaEnvelope size={24} />
+              <FaEnvelope size={20} />
             </a>
         </div>
+      </div>
+      <div className=" px-4 mt-4 text-center border-t border-gray-700 pt-4">
+         <p className="text-gray-500">© {new Date().getFullYear()} Mughni Rayhan. All rights reserved.</p>
       </div>
     </footer>
   );

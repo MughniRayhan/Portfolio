@@ -7,6 +7,7 @@ import { RouterProvider} from "react-router";
 import { router } from './Router/Router.jsx';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import { ToastContainer } from 'react-toastify';
 
 
 AOS.init({
@@ -15,6 +16,7 @@ AOS.init({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ToastContainer/>
      <div className='poppins'>
       <RouterProvider router={router} />
      </div>

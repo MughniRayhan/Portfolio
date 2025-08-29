@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { motion, useScroll } from "framer-motion";
 import useAxios from "../../hooks/useAxios";
+import {  toast } from 'react-toastify';
 
 export default function Contact() {
     const scrollYProgress = useScroll().scrollYProgress
@@ -17,8 +18,10 @@ export default function Contact() {
     try {
       await post(formData);
       setFormData({ name: "", email: "", message: "" });
+      toast.success("Message sent successfully!");
     } catch (err) {
       console.log(err);
+      toast.error("Failed to send message. Please try again.");
     }
   };
 
@@ -55,7 +58,7 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 shadow-sm hover:shadow-primary focus:shadow-primary outline-0 transition-all duration-200"
             required
           />
           <input
@@ -64,7 +67,7 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your Email"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 shadow-sm hover:shadow-primary focus:shadow-primary outline-0 transition-all duration-200"
             required
           />
           <textarea
@@ -73,19 +76,17 @@ export default function Contact() {
             onChange={handleChange}
             placeholder="Your Message"
             rows="5"
-            className="p-3 rounded-md bg-gray-800 border border-gray-700"
+            className="p-3 rounded-md bg-gray-800 border border-gray-700 shadow-sm hover:shadow-primary focus:shadow-primary outline-0 transition-all duration-200"
             required
           />
           <button
             type="submit"
-            className="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-md transition"
+            className="bg-primary hover:bg-transparent hover:border hover:border-primary transition-all duration-300 text-white px-6 py-3 rounded-md"
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
 
-          {response && <p className="text-green-400 mt-2">{response.msg}</p>}
-          {error && <p className="text-red-500 mt-2">{error}</p>}
 
           <div className="flex gap-4 mt-6 text-2xl justify-center">
             <a href="https://github.com/yourusername" target="_blank"><FaGithub /></a>
