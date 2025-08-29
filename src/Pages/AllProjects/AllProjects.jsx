@@ -13,24 +13,37 @@ function AllProjects() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">
           {projects.map((project) => (
             <div
-              key={project.id}
-              className="border border-gray-400  rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 "
-            >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-48 object-cover "
-              />
-              <div className="p-4 pb-10   ">
-                <h3 className="text-xl font-semibold my-2  text-gray-300">{project.name}</h3>
-                <p className="text-gray-500 mb-5 text-sm ">{project.description}</p>
-                <Link
-                  to={`/projects/${project.id}`}
-                  className="w-full  bg-gradient-to-b from-primary/80 to-primary/30 hover:bg-gradient-to-l hover:from-primary/30 hover:to-transparent hover:border hover:border-primary text-sm text-white font-medium py-3 px-4 rounded-lg transition-all duration-300" >
-                  See Details
-                </Link>
-              </div>
-            </div>
+  key={project.id}
+>
+  <motion.div
+    className="relative border border-gray-400 rounded-2xl shadow-lg overflow-hidden cursor-pointer flex flex-col h-full"
+    whileHover={{ scale: 1.05 }}
+    transition={{ duration: 0.3, delay: 0.2  }}
+  >
+    {/* Image */}
+    <img
+      src={project.image}
+      alt={project.name}
+      className="w-full h-48 object-cover"
+    />
+
+   
+
+    {/* Card Content */}
+    <div className="relative p-4 pb-10 z-10">
+      <h3 className="text-xl font-semibold my-2 text-gray-300">
+        {project.name}
+      </h3>
+      <p className="text-gray-400 mb-5 text-sm">{project.description}</p>
+      <Link
+        to={`/projects/${project.id}`}
+        className="w-full bg-gradient-to-b from-primary/80 to-primary/30 hover:bg-gradient-to-l hover:from-primary/30 hover:to-transparent hover:border hover:border-primary text-sm text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
+      >
+        See Details
+      </Link>
+    </div>
+  </motion.div>
+</div>
           ))}
         </div>
  

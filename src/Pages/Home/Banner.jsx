@@ -3,6 +3,7 @@ import ReactTypingEffect from 'react-typing-effect'
 import Profile from '../../assets/my-profile.jpg'
 import resume from '../../assets/resume.pdf'
 import { motion } from "framer-motion"
+import { FaDownload } from "react-icons/fa";
 
 function Banner() {
   return (
@@ -34,7 +35,7 @@ function Banner() {
                 </ReactTypingEffect>
              </h3>
 
-             <p className="sm:text-lg  text-gray-400 leading-relaxed mb-10 mt-8">
+             <p className="sm:text-lg accent-gradient text-gray-400 leading-relaxed mb-10 mt-8">
             I’m a passionate MERN Stack Developer who loves turning ideas into interactive, user-friendly web applications. 
             With a strong foundation in React.js, and modern UI frameworks, I focus on creating responsive and performance-optimized solutions.
             </p>
@@ -45,7 +46,8 @@ function Banner() {
             <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
             className="card-content  text-gray-300 flex justify-center items-center   font-bold  "
             >
-             Dowload CV
+              <FaDownload className='mr-2 text-sm'/>
+             Resume
              </a>
              </div>
            </div>

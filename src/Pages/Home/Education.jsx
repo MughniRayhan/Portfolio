@@ -34,7 +34,7 @@ export default function Education() {
     const scrollYProgress = useScroll().scrollYProgress
   return (
     <section className="py-20 px-6 md:px-20 bg-gradient-to-b from-transparent via-gray-950 to-gray-900 text-white relative">
-<motion.h2 className="text-3xl text-center lg:text-4xl font-bold   relative  w-[40%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
+<motion.h2 className="text-2xl text-center lg:text-4xl font-bold   relative  w-[40%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
                 Academic Background
               
               <motion.span style={{
@@ -63,23 +63,23 @@ export default function Education() {
             <div className="z-10 text-center flex flex-col items-center">
             <p className="mb-4 text-center">{edu.icon}</p>
             <h3 className="text-xl font-semibold mb-2 z-10">{edu.program}</h3>
-            <p className="text-gray-300 mb-1">{edu.institution}</p>
-            <p className="text-gray-500 mb-1">{edu.duration}</p>
+            <p className="text-gray-300 mb-1 text-lg">{edu.institution}</p>
+            <p className="text-primary mb-1">{edu.duration}</p>
             <p className="text-gray-400 font-medium">{edu.grade}</p>
             </div>
 
             {/* Animated Border */}
             <motion.div
-              className="absolute inset-0 rounded-2xl border border-transparent"
+              className="absolute inset-0 rounded-2xl border border-transparent "
   style={{
     background:
-      "conic-gradient(from 0deg,  oklch(23% 0.034 264.665))", // gray-700 to gray-800 to gray-700
+      "conic-gradient(from 0deg,  oklch(23% 0.034 264.665))",
     mask: "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
     WebkitMaskComposite: "xor",
-    padding: "3px",
+    padding: "2px",
   }}
   animate={{ rotate: 360 }}
-  transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+  transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
             />
           </motion.div>
         ))}

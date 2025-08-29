@@ -1,12 +1,32 @@
-# React + Vite
+# 🌐 Personal Portfolio - Mughni Rayhan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal **portfolio website**, built with **React.js** and **Tailwind CSS**, to showcase my skills and projects as a web developer.  
+The site highlights my work, technical expertise, and provides a way to connect with me.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🖥️ **Modern UI** – Built with React & Tailwind CSS for responsiveness and speed
+- 🎨 **Animations** – Smooth interactions using Framer Motion
+- 📂 **Projects Showcase** – Highlighting my MERN and other development projects
+- 📧 **Contact Form** – Users can send me a direct message (via backend API & Axios)
+- 🔗 **Social Links** – GitHub, LinkedIn, and email integrations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Axios (with custom `useAxios` hook)
+
+**Backend**
+
+- Node.js
+- Express.js
+- Nodemailer (for sending emails)

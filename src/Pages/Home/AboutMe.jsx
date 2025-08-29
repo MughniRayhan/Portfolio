@@ -1,8 +1,9 @@
 import React from "react";
 import { motion, useScroll } from "motion/react"
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from '../../assets/resume.pdf'
 import { div } from "motion/react-client";
+import { Link } from "react-router";
 
 const about = [
   {id:1, title: "My Programming Journey", content: "I started my programming journey with curiosity about how software works, beginning with C and C++. Over time, I explored Java, and eventually found my passion in web development with JavaScript, React, and the MERN stack."},
@@ -43,7 +44,7 @@ function AboutMe() {
             <motion.img
               src="/images/my-profile.jpg" 
               alt="Mughni Rayhan"
-              className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-secondary shadow-lg"
+              className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-3 border-secondary shadow-lg"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
@@ -58,39 +59,23 @@ function AboutMe() {
 >
   {/* About Text */}
   <p className="text-gray-400 max-w-2xl text-center lg:text-left text-lg leading-relaxed">
-    Hi, I’m <span className="text-secondary font-semibold">Mughni Rayhan</span>, 
-    a passionate frontend developer who loves bringing ideas to life with clean UI, 
+    Hi, I’m <span className="text-primary font-semibold">Mughni Rayhan</span>, 
+    a passionate MERN stack developer who loves bringing ideas to life with clean UI, 
     smooth interactions, and modern web technologies. I enjoy turning complex 
     problems into simple, elegant solutions.
   </p>
 
   {/* Social Links & CV */}
-  <div className="flex gap-6 items-center">
+  <div className="flex gap-3 items-center">
         {/* CV Download */}
     <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
-                className="border text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition"
-                >
-                 Dowload CV
-                 </a>
-    {/* GitHub */}
-    <a
-      href="https://github.com/MughniRayhan"
-      target="_blank"
-      rel="noreferrer"
-      className="text-gray-400 hover:text-secondary transition text-2xl"
-    >
-      <FaGithub />
+      className="border flex text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition">
+        <FaDownload className='mr-2 text-sm'/>
+        Resume
     </a>
-
-    {/* LinkedIn */}
-    <a
-      href="https://www.linkedin.com/in/mughni-rayhan-1aa587317/"
-      target="_blank"
-      rel="noreferrer"
-      className="text-gray-400 hover:text-secondary  transition text-2xl"
-    >
-      <FaLinkedin />
-    </a>
+   <Link to='/contact' className="btn btn-outline bg-transparent border  text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition">
+    Lets Connect
+   </Link>
   </div>
 </motion.div>
 

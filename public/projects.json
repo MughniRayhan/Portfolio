@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Sports Club Management System",
     "image": "/images/scms.png",
-    "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb"],
+    "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb", "Stripe Payment", "Firebase Auth","JWT Auth","Tanstack Query"],
     "description": "A responsive React.js application for managing sports club activities including court bookings, role-based dashboards, payment processing with Stripe, and user authentication.",
     "features": [
     "Role-based dashboards for Admin, Riders, and Customers",
@@ -17,7 +17,7 @@
     "id": 2,
     "name": "GreenNest",
     "image": "/images/GreenNest.png",
-    "stack": ["MERN Stack", "Tailwind CSS", "JWT Auth"],
+    "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb", "Firebase Auth"],
     "description": "A full-featured web application to track and manage indoor plants. Users can view plant details, monitor watering schedules, and sort plants by care level or next watering date.",
     "features": [
     "Role-based dashboards for Admin, Riders, and Customers",
@@ -31,7 +31,7 @@
     "id": 3,
     "name": "Food Expiry Tracker System",
     "image": "/images/foodExpiry.png",
-    "stack": ["React.js", "Node.js", "Stripe Payment"],
+    "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb", "Firebase Auth"],
     "description": "A full-stack web app to track food items, monitor expiry dates, get usage suggestions, and minimize waste. Built with React, Tailwind CSS, Express.js, and MongoDB.",
     "features": [
     "Role-based dashboards for Admin, Riders, and Customers",
@@ -45,7 +45,7 @@
   "id": 4,
   "name": "SwiftParcel",
   "image": "/images/swiftParcel.png",
-  "stack": ["MERN", "Stripe Payment", "Firebase Auth"],
+  "stack": ["React.js", "Tailwind CSS","Node.js","Mongodb", "Stripe Payment", "Firebase Auth","JWT Auth","Tanstack Query"],
   "description": "A parcel management and delivery tracking platform where users can schedule, pay, and track their deliveries in real time. Features include role-based dashboards for admins, riders, and users.",
   "features": [
     "Role-based dashboards for Admin, Riders, and Customers",

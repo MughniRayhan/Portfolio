@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJava, FaGithub, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiRedux, SiMongodb, SiC, SiCplusplus, SiJavascript, SiPython, SiPostman, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiRedux, SiMongodb, SiC, SiCplusplus, SiJavascript, SiPython, SiPostman, SiExpress,SiNetlify, SiVercel } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 import Tilt from 'react-parallax-tilt';
 import { motion, useScroll } from "motion/react";
@@ -29,6 +29,8 @@ const allSkills = [
   { icon: <FaGithub className="text-gray-300" />, name: "GitHub", category: "Tools" },
   { icon: <VscCode className="text-blue-500" />, name: "VS Code", category: "Tools" },
   { icon: <SiPostman className="text-orange-400" />, name: "Postman", category: "Tools" },
+  {icon: <SiNetlify className="text-cyan-400" />, name: "Netlify", category: "Tools" },
+  { icon: <SiVercel className="text-white" />, name: "Vercel", category: "Tools" },
 ];
 
 const categories = ["All", "Frontend", "Backend", "Programming Languages", "Tools"];

@@ -1,7 +1,6 @@
 import { useParams, Link, useLoaderData } from "react-router";
 import { FaCheckCircle, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-
-
+import { IoArrowBackCircle } from "react-icons/io5";
 
 export default function ProjectDetails() {
   const projectDetails = useLoaderData();
@@ -18,7 +17,7 @@ export default function ProjectDetails() {
   }
 
   return (
-    <section className="py-16 px-6 max-w-5xl mx-auto my-10 text-gray-200">
+    <section className="py-20 px-6 max-w-5xl mx-auto my-10 text-gray-200 ">
       {/* Project Image */}
       <div
         className="overflow-hidden rounded-2xl shadow-lg mb-8"
@@ -33,31 +32,31 @@ export default function ProjectDetails() {
 
       {/* Project Title */}
       <h2
-        className="sm:text-4xl text-3xl font-extrabold mb-3 sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent"
-        data-aos="fade-right" data-aos-duration="2000"
+        className="sm:text-4xl text-3xl text-center font-extrabold mb-3 sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent"
+        
       >
         {project.name}
       </h2>
       <p
-        className="sm:text-lg accent-gradient leading-relaxed mb-6"
-        data-aos="fade-left" data-aos-duration="2000"
+        className="sm:text-lg accent-gradient leading-relaxed mb-10 text-center"
+       
       >
         {project.description}
       </p>
 
       {/* Tech Stack */}
       <div
-        className="bg-gray-900 p-6 rounded-xl shadow-md mb-8"
-        data-aos="zoom-out" data-aos-duration="2000"
+        className="bg-gray-900 p-6 py-10 rounded-xl shadow-md mb-8"
+        
       >
-        <h3 className="text-xl font-semibold text-gray-200 mb-3">
+        <h3 className="text-xl font-semibold text-gray-200 mb-3 ">
           🛠️ Technology Stack
         </h3>
-        <div className="flex flex-wrap gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ">
           {project.stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-primary/20 border border-primary text-accent px-3 py-1 rounded-lg text-sm"
+              className="bg-transparent border border-white text-gray-200 px-3 sm:py-1 py-2 rounded-lg text-sm text-center"
               data-aos="flip-up"
               data-aos-delay={index * 100}
               data-aos-duration="2000"
@@ -71,8 +70,8 @@ export default function ProjectDetails() {
       {/* Features */}
       {project.features && (
         <div
-          className="bg-gray-900 p-6 rounded-xl shadow-md mb-8"
-          data-aos="zoom-in" data-aos-duration="2000"
+          className="bg-gray-900 p-6 py-10 rounded-xl shadow-md mb-8"
+         
         >
           <h3 className="text-xl font-semibold text-gray-200 mb-3">
             ⭐ Key Features
@@ -115,13 +114,13 @@ export default function ProjectDetails() {
       )}
 
       {/* Links */}
-      <div className="flex gap-4 mt-6" >
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6" >
         {project.liveLink && (
           <a
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-5 py-2 rounded-lg shadow-md transition"
+            className="flex items-center gap-2 bg-gradient-to-l from-primary/30 to-transparent border border-primary  hover:scale-105 duration-300 transition-all px-5 py-2 rounded-lg shadow-md "
           >
             <FaExternalLinkAlt /> Live Demo
           </a>
@@ -131,17 +130,16 @@ export default function ProjectDetails() {
             href={project.githubLink}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-900 px-5 py-2 rounded-lg shadow-md transition"
+            className="flex items-center gap-2 bg-gray-800 hover:scale-105 duration-300 transition-all  px-5 py-2 rounded-lg shadow-md "
           >
             <FaGithub /> GitHub
           </a>
         )}
-      </div>
 
-      {/* Back Button */}
-      <div className="mt-10" >
-        <Link to="/projects" className="inline-block text-white hover:underline">
-          ← Back to Projects
+        <Link to="/projects" 
+        className="flex items-center gap-2 bg-gradient-to-l from-primary/30 to-transparent border border-primary hover:scale-105 duration-300 transition-all w-50 px-5 py-2 rounded-lg shadow-md ">
+          <IoArrowBackCircle />
+          Back to Projects
         </Link>
       </div>
     </section>
