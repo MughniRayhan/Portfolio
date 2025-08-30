@@ -23,11 +23,11 @@ const navLinks = [
   ];
 
   return (
-    <nav className="navbar fixed top-0 z-50 transition duration-300   text-white sm:px-20 bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md">
+    <nav className="navbar fixed top-0 z-50 transition duration-300   text-white px-2 sm:px-20 bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md">
   <div className="navbar-start">
 
     {/* logo */}
-    <Link to="/" className='sm:text-xl font-bold accent-gradient outline-0'>
+    <Link to="/" className='sm:text-xl  font-bold accent-gradient outline-0'>
       <span>&lt;</span>Mughni
       <span > / </span>Rayhan
       <span>&gt;</span>
@@ -85,7 +85,7 @@ const navLinks = [
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3  p-2 shadow ">
+        className="menu menu-sm dropdown-content bg-[#050414]   rounded-box z-1 mt-3  p-2 shadow ">
         
   {navLinks.map((link, index) => (
     <motion.li

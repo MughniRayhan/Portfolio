@@ -5,9 +5,9 @@ import { Link, useLoaderData } from 'react-router'
 function AllProjects() {
   const projects = useLoaderData()
   return (
-    <div className="py-20 pb-20" id="projects" >
+    <div className="py-20 px-6 md:px-20  skills-gradient text-white" >
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
-         <h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-3" >
+         <h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto md:bg-gradient-to-t md:from-primary/30 md:via-gray-400 md:to-gray-200 sm:bg-clip-text md:text-transparent mb-3">
                 My Projects
               </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">

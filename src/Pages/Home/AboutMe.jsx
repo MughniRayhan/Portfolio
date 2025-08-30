@@ -66,7 +66,7 @@ function AboutMe() {
   </p>
 
   {/* Social Links & CV */}
-  <div className="flex gap-3 items-center">
+  <div className="flex flex-col sm:flex-row gap-3 items-center">
         {/* CV Download */}
     <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
       className="border flex text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition">

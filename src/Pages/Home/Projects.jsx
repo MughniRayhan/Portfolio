@@ -38,9 +38,9 @@ const projects = [
 export default function Projects() {
   const scrollYProgress = useScroll().scrollYProgress
   return (
-    <section className="py-16 pb-20" id="projects" data-aos="fade-up" data-aos-duration="2000">
+    <section className="py-16 pb-20 text-white"  id="projects" data-aos="fade-up" data-aos-duration="2000">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
-         <motion.h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-3" >
+         <motion.h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto md:bg-gradient-to-t md:from-primary/30 md:via-gray-400 md:to-gray-200 md:bg-clip-text md:text-transparent mb-3" >
                 My Projects
               
               <motion.span style={{

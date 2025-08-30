@@ -55,7 +55,7 @@ function Banner() {
            {/* right side */}
            <div className='md:w-1/2  flex justify-center md:justify-end items-center'>
             <img src={Profile} alt="Mughni Rayhan"  
-            className='w-[90%] h-[50%] object-cover rounded-full drop-shadow-[0_10px_20px_rgba(39,111,122,0.5)] flex justify-center'
+            className=' w-[90%] h-[50%] object-cover rounded-full drop-shadow-[0_10px_20px_rgba(39,111,122,0.5)] flex justify-center'
             />
            </div>
         </div>
