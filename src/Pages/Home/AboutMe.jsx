@@ -23,7 +23,7 @@ function AboutMe() {
         <section className="pt-20 pb-16  lg:pb-0  skills-gradient bg-gradient-to-t from-primary/50 to-transparent text-white " data-aos="fade-up" data-aos-duration="2000" >
        
               <div className="px-6 lg:px-20">
-                <motion.h2 className="text-3xl text-center lg:text-4xl font-bold   relative  w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
+                <motion.h2 className="text-3xl text-center lg:text-4xl font-bold   lg:relative  lg:w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
                 About Me
               
               <motion.span style={{
@@ -68,7 +68,10 @@ function AboutMe() {
   {/* Social Links & CV */}
   <div className="flex flex-col sm:flex-row gap-3 items-center">
         {/* CV Download */}
-    <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
+             <a
+    href="https://drive.google.com/uc?export=download&id=1c-YV_EaZ-KwkVWBKvfm1fZ_2worpxmKB"
+    target="_blank"
+    rel="noopener noreferrer"
       className="border flex text-sm text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 duration-200 transition">
         <FaDownload className='mr-2 text-sm'/>
         Resume

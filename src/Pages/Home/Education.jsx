@@ -34,7 +34,7 @@ export default function Education() {
     const scrollYProgress = useScroll().scrollYProgress
   return (
     <section className="py-20 px-6 md:px-20 bg-gradient-to-b from-transparent via-gray-950 to-gray-900 text-white relative">
-<motion.h2 className="text-2xl text-center lg:text-4xl font-bold   relative  w-[40%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
+<motion.h2 className="text-2xl text-center lg:text-4xl font-bold   lg:relative  lg:w-[40%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-12" >
                 Academic Background
               
               <motion.span style={{

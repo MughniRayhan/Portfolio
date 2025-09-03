@@ -8,32 +8,33 @@ import { FaDownload } from "react-icons/fa";
 function Banner() {
   return (
     <div className='py-24  '>
-        <div className='flex flex-col-reverse md:flex-row justify-between items-center px-20 '>
+        <div className='flex flex-col-reverse lg:flex-row justify-between items-center px-20 '>
           
            {/* left side */}
-           <div className='md:w-1/2 text-center md:text-left text-white mt-8'>
+           <div className='lg:w-1/2 text-center lg:text-left text-white mt-8 flex flex-col justify-center  items-center lg:items-start'>
 
              <h2 className='text-3xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight'>Hi, I am</h2>
              <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight bg-gradient-to-b from-primary/30 via-gray-400 to-gray-200 bg-clip-text text-transparent'>Mughni Rayhan</h2>
              {/*  */}
-             <h3 className='text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#276F7A] leading-tight'>
-                <span className='text-white '>I am a </span>
-                <ReactTypingEffect 
-                text={[
-                      
-                       'MERN Stack Developer',
-                       'Frontend Developer' 
-                ]}
-                speed={100}
-                eraseSpeed={50}
-                typingDelay={500}
-                eraseDelay={2000}
-                cursorRenderer={(cursor) => (
-               <span className='text-[#1D5861]'>{cursor}</span>
-               )}
-                >
-                </ReactTypingEffect>
-             </h3>
+        <h3 className='text-xl sm:text-2xl md:text-3xl text-white font-semibold mb-4leading-tight w-full inline-block  h-20 sm:h-10'>
+  <span>I am a </span>  
+  <span className="   text-[#276F7A] ">
+    <ReactTypingEffect 
+      text={[
+        'MERN Stack Developer',
+        'Frontend Developer' 
+      ]}
+      speed={100}
+      eraseSpeed={50}
+      typingDelay={500}
+      eraseDelay={2000}
+      cursorRenderer={(cursor) => (
+        <span className='text-[#1D5861]'>{cursor}</span>
+      )}
+    />
+  </span>
+</h3>
+
 
              <p className="sm:text-lg accent-gradient text-gray-400 leading-relaxed mb-10 mt-8">
             I’m a passionate MERN Stack Developer who loves turning ideas into interactive, user-friendly web applications. 
@@ -43,12 +44,15 @@ function Banner() {
             
 
            <div className='card-wrapper h-[60px] w-[150px] mt-10'>
-            <a href={resume} download='resume' target="_blank" rel="noopener noreferrer" 
-            className="card-content  text-gray-300 flex justify-center items-center   font-bold  "
-            >
-              <FaDownload className='mr-2 text-sm'/>
-             Resume
-             </a>
+            <a
+    href="https://drive.google.com/uc?export=download&id=1c-YV_EaZ-KwkVWBKvfm1fZ_2worpxmKB"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="card-content text-gray-300 flex justify-center items-center font-bold"
+  >
+    <FaDownload className='mr-2 text-sm'/> Resume
+  </a>
+
              </div>
            </div>
 

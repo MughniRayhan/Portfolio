@@ -43,7 +43,7 @@ export default function Skills() {
 
   return (
     <section className="py-20 px-6 md:px-20  skills-gradient text-white" data-aos="fade-up" data-aos-duration="2000">
-         <motion.h2 className="text-3xl text-center md:text-4xl font-bold   relative  w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-3" >
+         <motion.h2 className="text-3xl text-center md:text-4xl font-bold   lg:relative  lg:w-[20%] mx-auto sm:bg-gradient-to-t sm:from-primary/30 sm:via-gray-400 sm:to-gray-200 sm:bg-clip-text sm:text-transparent mb-3" >
                 Skills
               
               <motion.span style={{
